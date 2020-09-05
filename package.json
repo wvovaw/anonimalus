@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
+    "start": "node app.js",
     "bot": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
