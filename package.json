@@ -1,0 +1,20 @@
+{
+  "name": "overheared",
+  "version": "1.0.0",
+  "description": "Discord bot for anonimous posts",
+  "main": "app.js",
+  "repository": "https://github.com/wvovaw/overheared",
+  "author": "wvovaw",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "bot": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "eslint": "^7.8.1"
+  },
+  "dependencies": {
+    "discord.js": "^12.3.1"
+  }
+}
