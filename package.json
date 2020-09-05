@@ -1,15 +1,14 @@
 {
-  "name": "overheared",
+  "name": "anonimalus",
   "version": "1.0.0",
   "description": "Discord bot for anonimous posts",
   "main": "app.js",
-  "repository": "https://github.com/wvovaw/overheared",
+  "repository": "https://github.com/wvovaw/anonimalus.git",
   "author": "wvovaw",
   "license": "MIT",
   "private": false,
   "scripts": {
     "start": "node app.js",
-    "bot": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
