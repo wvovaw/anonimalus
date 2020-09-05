@@ -48,7 +48,7 @@ client.on('message', msg => {
     }
     // Send command syntax: !Send <channelId> <Message>
     const channelId = args.shift();
-    const message = args.join();
+    const message = args.join(' ');
     if (message == '') {
       user.send('Error: Empty input!');
       return;
