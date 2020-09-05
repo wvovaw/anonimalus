@@ -2,7 +2,10 @@ const { prefix, token } = require('./config.json');
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-client.login(token);
+if (process.env.DISCORD_TOKEN !== '')
+  client.login(process.env.DISCORD_TOKEN);
+else
+  client.login(token);
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
