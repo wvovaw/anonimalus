@@ -97,7 +97,7 @@ client.on('message', msg => {
     }
     // Send command syntax: !dm <userId> <Message>
     const userId = args.shift();
-    const message = args.join();
+    const message = args.join(' ');
     if (message == '') {
       user.send('Error: Empty input!');
       return;
