@@ -1,13 +1,14 @@
 {
 	"prefix": "!",
-	"token": "your token",
+  "token": "NzUxNTcwOTA4MDY1MzAwNDgx.X1LA8w.LhNCasFhNRLb0Jgy3uwh3me8O-A",
+  "adminId": "287283242854383618",
 	"resources": {
 		"embedColor": "0x000000",
 		"inviteUrl": "https://discord.com/oauth2/authorize?client_id=751570908065300481&scope=bot&permissions=256064",
 		"repo": "https://github.com/wvovaw/anonimalus",
 		"footerIcon" : "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.icons8.com%2Fdotty%2F72%2Fanonymous-mask.png&f=1&nofb=1",
     "thumbnailImage": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.winudf.com%2Fv2%2Fimage%2FY29tLmRpbGFkYW5nLmFub255bW91cy5tYXNrX2ljb25fMF8xMTM0M2E1OA%2Ficon.png%3Fw%3D170%26fakeurl%3D1%26type%3D.png&f=1&nofb=1",
-    "userIdGif": "https://flic.kr/p/2jEGocC",
-    "channelIdGif": "https://flic.kr/p/2jEKPVy"
+    "userIdGif": "https://s8.gifyu.com/images/userID.gif",
+    "channelIdGif": "https://s8.gifyu.com/images/channelId.gif"
 	}
 }
