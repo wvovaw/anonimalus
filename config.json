@@ -1,7 +1,7 @@
 {
 	"prefix": "!",
-  "token": "Do not reveal your token",
-  "adminId": "287283242854383618",
+  "token": "Do not reveal your token here. Just set a DISCORD_TOKEN enviroment variable with token",
+  "adminId": "If you want to get notifications when your bot is being invited/kicked, paste your id",
 	"resources": {
 		"embedColor": "0x000000",
 		"inviteUrl": "https://discord.com/oauth2/authorize?client_id=751570908065300481&scope=bot&permissions=256064",
