@@ -9,11 +9,12 @@
   "private": false,
   "scripts": {
     "start": "node app.js",
-    "startw": "node --trace-warnings app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d www/dist"
   },
   "devDependencies": {
-    "eslint": "^7.8.1"
+    "eslint": "^7.8.1",
+    "gh-pages": "^3.1.0"
   },
   "dependencies": {
     "discord.js": "^12.3.1"
