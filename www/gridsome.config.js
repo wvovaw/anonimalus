@@ -5,6 +5,9 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Gridsome',
+  siteName: 'Anonimalus',
+  siteUrl: 'https://wvovaw.github.io/anonimalus/',
+  pathPrefix: '/anonimalus',
+  titleTemplate: '%s',
   plugins: []
-}
+};
