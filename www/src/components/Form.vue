@@ -4,35 +4,38 @@
     method="post"
     v-on:submit.prevent="handleSubmit"
     action="/send"
-    data-netlify="true"
-    data-netlify-honeypot="bot-field"
   >
-    <p hidden>
-      <label>
-        Don’t fill this out: <input name="bot-field" />
-      </label>
-    </p>
-
+    <div class="reciever-wrapper">
+      <label>Channel</label>
+      <input type="radio" name="target" value="channel" v-model="formData.target"><br />
+      <label>User</label>
+      <input type="radio" name="target" value="user" v-model="formData.target">
+    </div>
     <div class="id-wrapper">
       <label>Channel ID</label>
-      <input type="text" v-model="formData.channelID">
+      <input type="text" v-model="formData.clientId">
     </div>
     <div class="message-wrapper">
       <label for="message">Message</label>
       <textarea name="message" v-model="formData.message"></textarea>
     </div>
 
-    <button type="submit">Submit form</button>
+    <button
+      :disabled="formData.message.length < 1 || formData.clientId.length < 18"
+      type="submit"
+    >Send</button>
   </form>
 </template>
 
 <script>
+import axios from 'axios';
 export default {
   data() {
     return {
       formData: {
-        channelID: 0,
-        message: ''
+        clientId: null,
+        message: '',
+        target: 'channel'
       }
     }
   },
@@ -42,17 +45,20 @@ export default {
       .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
       .join('&')
   },
-  handleSubmit(e) {
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: this.encode({
-        'form-name': e.target.getAttribute('name'),
-        ...this.formData,
-      }),
+  async handleSubmit(e) {
+    const d = new FormData();
+    d.append('clientId', this.formData.clientId);
+    d.append('message', this.formData.message);
+    d.append('target', this.formData.target);
+    axios({
+      method: 'post',
+      headers: {'Content-Type': 'multipart/form-data' },
+      url: 'https://anonimalus.herokuapp.com/send',
+      // url: 'http://localhost:3000/send',
+      data: d
     })
-    .then(() => window.alert('Success'))
-    .catch(error => alert(error))
+      .then(r => alert(r.data))
+      .catch(e => console.error(e));
   }
 }
 }

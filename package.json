@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@hapi/hapi": "^20.1.0",
+    "axios": "^0.21.1",
     "discord.js": "^12.3.1"
   }
 }
