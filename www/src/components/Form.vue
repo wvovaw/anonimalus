@@ -39,40 +39,34 @@ export default {
       formData: {
         clientId: null,
         message: '',
-        target: 'channel'
+        target: 'Channel'
       }
     }
   },
   methods: {
-  encode(data) {
-    return Object.keys(data)
-      .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-      .join('&')
-  },
-  async handleSubmit(e) {
-    const d = new FormData();
-    d.append('clientId', this.formData.clientId);
-    d.append('message', this.formData.message);
-    d.append('target', this.formData.target.toLowerCase());
-    axios({
-      method: 'post',
-      headers: {'Content-Type': 'multipart/form-data' },
-      url: 'https://anonimalus.herokuapp.com/send',
-      // url: 'http://localhost:3000/send',
-      data: d
-    })
-      .then(r => alert(r.data))
-      .catch(e => console.error(e));
+    async handleSubmit(e) {
+      const d = new FormData();
+      d.append('clientId', this.formData.clientId);
+      d.append('message', this.formData.message);
+      d.append('target', this.formData.target.toLowerCase());
+      axios({
+        method: 'post',
+        headers: {'Content-Type': 'multipart/form-data' },
+        url: 'https://anonimalus.herokuapp.com/send',
+        // url: 'http://localhost:3000/send',
+        data: d
+      })
+        .then(r =>  {
+          alert(r.data);
+          if (r.data.includes('Success!')) this.formData.message = '';
+        })
+        .catch(e => console.error(e));
+    }
   }
-}
 }
 </script>
 
-<style>
-html, body {
-  font-size: 1.2em;
-  margin: 10px 100px 0 100px;
-}
+<style lang="css" scoped>
 .container {
   border: white 1px solid;
   padding: 10px;
@@ -86,6 +80,9 @@ button {
   font-size: 1.1em;
   background-color: black;
   color: white;
+}
+button:disabled {
+  color: grey;
 }
 input[type=text], textarea {
   border: 2px solid white;
