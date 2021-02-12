@@ -1,10 +1,10 @@
 [![Discord](https://img.shields.io/badge/Anonimalus-Invite-99AAB5?style=flat-square&logo=Discord&labelColor=7289DA&logoColor=white)](https://discord.com/oauth2/authorize?client_id=751570908065300481&scope=bot&permissions=256064)
 [![CodeFactor](https://www.codefactor.io/repository/github/wvovaw/anonimalus/badge)](https://www.codefactor.io/repository/github/wvovaw/anonimalus)
 
-<h1 style="text-align: center">The Anonimalus</h1>
-<div style="text-align: center">
+<h1 align="center">The Anonimalus</h1>
+<p align="center">
   <img src="./blob/anon.png" alt="Anonimalus">
-</div>
+</p>
 
 # Description
 
@@ -40,6 +40,13 @@ git clone https://github.com/wvovaw/anonimalus.git
 cd anonimalus
 npm install
 ```
+## Register new discord app
+
+1. Go to [devportal](https://discord.com/developers/applications)
+2. Create new app, go to bot section
+3. Copy a secret token
+4. Make sure `SERVER MEMBERS INTENT` option is enabled
+5. Save
 
 ## Authentication
 
