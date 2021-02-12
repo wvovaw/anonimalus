@@ -5,6 +5,8 @@
         <g-link to="/send">Send message</g-link>
     </header>
     <slot/>
+    <footer>
+    </footer>
   </div>
 </template>
 
@@ -31,6 +33,17 @@ html, body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+.contact {
+  /* font-family: Roboto Slab; */
+  text-align: center;
+  float: none;
+  position:relative;
+  top: auto;
+  right:auto;
+  width: 100%;
+  height: auto;
+  line-height: 20px;
 }
 a, a:visited {
   color: green;
