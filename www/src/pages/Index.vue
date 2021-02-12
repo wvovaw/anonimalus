@@ -1,7 +1,7 @@
 <template>
     <Layout>
       <div class="baner">
-        <g-image src="~/assets/images/anon.jpg" />
+        <g-image src="~/assets/images/anon.png" />
       </div>
       <div class="description">
         <div class="glitch-text-container">
@@ -89,6 +89,8 @@ export default {
 }
 .baner {
   width: 100%;
+  margin-top: 50px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
 }
