@@ -17,16 +17,20 @@
       <div class="commands">
         <h3>Commands</h3>
         <table>
-          <tr>
-            <th>Command</th>
-            <th>Syntax</th>
-            <th>Description</th>
-          </tr>
-          <tr v-for="edge in $page.commands.edges" :key="edge.node.id">
-            <td>{{ edge.node.name }}</td>
-            <td>{{ edge.node.syntax }}</td>
-            <td>{{ edge.node.description }}</td>
-          </tr>
+          <thead>
+            <tr>
+              <th>Command</th>
+              <th>Syntax</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="edge in $page.commands.edges" :key="edge.node.id">
+              <td>{{ edge.node.name }}</td>
+              <td>{{ edge.node.syntax }}</td>
+              <td>{{ edge.node.description }}</td>
+            </tr>
+          </tbody>
         </table>
       </div>
       <hr>
