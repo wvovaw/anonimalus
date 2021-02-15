@@ -43,14 +43,18 @@ npm install
 ## Register new discord app
 
 1. Go to [devportal](https://discord.com/developers/applications)
-2. Create new app, go to bot section
+2. Create new app, go to `bot` section
 3. Copy a secret token
 4. Make sure `SERVER MEMBERS INTENT` option is enabled
 5. Save
 
 ## Authentication
 
-Just set enviroment variable DISCORD_TOKEN in the enviroment where you're going to run the bot.
+Create `.env` file and set DISCORD_TOKEN variable in there.
+
+```sh
+echo DISCORD_TOKEN="YourTokenGoesHere" > .env
+```
 
 ### *nix shells
 

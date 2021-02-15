@@ -1,6 +1,5 @@
 {
 	"prefix": "!",
-  "token": "Do not reveal your token here. Just set a DISCORD_TOKEN enviroment variable with token",
   "WhyAdminId": "If you want to get notifications when your bot is being invited/kicked, paste your id",
   "adminId": "287283242854383618",
 	"resources": {

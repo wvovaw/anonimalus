@@ -1,13 +1,12 @@
 'use strict';
 
-const { token } = require('./config.json');
+require('dotenv').config({path: __dirname + '/.env'});
 const EventHandler = require('./lib/EventHandler');
 const { Client } = require('discord.js');
 
 // Loggin
-const tk = process.env.DISCORD_TOKEN || token;
 const client = new Client();
-client.login(tk);
+client.login(process.env.DISCORD_TOKEN);
 
 // Events
 const eventHandler = new EventHandler(client);
