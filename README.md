@@ -56,18 +56,6 @@ Create `.env` file and set DISCORD_TOKEN variable in there.
 echo DISCORD_TOKEN="YourTokenGoesHere" > .env
 ```
 
-### *nix shells
-
-```sh
-export DISCORD_TOKEN=your_token_goes_here
-```
-
-### Windows
-
-```powershell
-set DISCORD_TOKEN=your_token_goes_here
-```
-
 ## Run bot
 
 ```sh
