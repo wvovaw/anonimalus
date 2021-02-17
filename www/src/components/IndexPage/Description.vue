@@ -1,7 +1,9 @@
 <template>
 <div class="Description">
   <div class="baner">
-    <g-image src="~/assets/images/anon.png" />
+    <a href="https://discord.com/oauth2/authorize?client_id=751570908065300481&scope=bot&permissions=256064">
+      <g-image src="~/assets/images/anon.png" title="Invite Anonimalus"/>
+    </a>
   </div>
   <div class="description">
     <div class="glitch-text-container">
