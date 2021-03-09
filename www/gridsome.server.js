@@ -57,7 +57,7 @@ module.exports = function (api) {
     });
     faq.addNode({
       id: '3',
-      question: 'Does it collet any data?',
+      question: 'Does it collect any data?',
       answer: 'No. The bot has no any data stores. It also does not log any message events.'
     });
   });
