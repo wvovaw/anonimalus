@@ -1,9 +1,21 @@
-[![Discord](https://img.shields.io/badge/Anonimalus-Invite-99AAB5?style=flat-square&logo=Discord&labelColor=7289DA&logoColor=white)](https://discord.com/oauth2/authorize?client_id=751570908065300481&scope=bot&permissions=256064)
-[![CodeFactor](https://www.codefactor.io/repository/github/wvovaw/anonimalus/badge)](https://www.codefactor.io/repository/github/wvovaw/anonimalus)
-
-<h1 align="center">The Anonimalus</h1>
 <p align="center">
   <img src="./blob/anon.png" alt="Anonimalus">
+  <br>
+  <h1 align="center">The Anonimalus</h1>
+</p>
+
+<p align="center">
+  <a title="Discord" href="https://discord.com/oauth2/authorize?client_id=751570908065300481&scope=bot&permissions=256064">
+    <img src="https://img.shields.io/badge/Anonimalus-Invite-99AAB5?style=flat-square&logo=Discord&labelColor=7289DA&logoColor=white">
+  </a>
+  <a title="CodeFactor" href="https://www.codefactor.io/repository/github/wvovaw/anonimalus">
+    <img src="https://www.codefactor.io/repository/github/wvovaw/anonimalus/badge">
+  </a>
+  <a title="MIT License" href="LICENSE">
+    <img src="https://img.shields.io/github/license/wvovaw/anonimalus?style=flat-square">
+  </a>
+  <br>
+  <br>
 </p>
 
 # Description
